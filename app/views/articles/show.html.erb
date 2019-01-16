@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title></title>
+  </head>
+  <body>
+    <article class="detail-article">
+      <h1 class="article-detail-title"><%= @article.title %></h1>
+      <div class="glyphicon glyphicon-calendar" id="article-date">
+        <%= @article.created_at.strftime("%b %d %Y") %>
+      </div>
+      <div class="article-body">
+        <%= @article.body %>
+      </div>
+    </article>
+  </body>
+</html>
