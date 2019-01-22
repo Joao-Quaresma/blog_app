@@ -19,6 +19,7 @@ Bundler.require(*Rails.groups)
 
 module BlogApp
   class Application < Rails::Application
+    config.action_cable.mount_path = '/cable'
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 5.2
 
